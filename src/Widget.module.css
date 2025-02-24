@@ -1,7 +1,225 @@
+:root {
+    --font: Helvetica, Arial;
+    --fs-12: 0.75rem;
+    --fs-13: 0.813rem;
+    --fs-14: 0.875rem;
+    --fs-18: 1.125rem;
+    --fs-30: 1.875rem;
+
+    --yellow-green: #d4e266;
+    --yellow-green-light: #f8fce5;
+    --black: #040406;
+    --gray-medium: #a4a4a4;
+    --gray-light: #dadada;
+    --gray-lightest: #f2f2f2;
+    --white: #fff;
+    --blue-muted: #425bb1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .widget {
-  background: #f4f4f4;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+    max-width: 346px;
+    padding: 32px 28px;
+    color: var(--black) ;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    font-family: var(--font), sans-serif;
+}
+
+.title {
+    font-size: var(--fs-18);
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+
+.location {
+    color: var(--gray-medium);
+    font-size: var(--fs-12);
+    margin: 0 0 16px 0;
+}
+
+.locationLink {
+    color: var(--gray-medium);
+    font-size: var(--fs-12);
+}
+
+.savingsAmount {
+    font-size: var(--fs-30);
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+.subtext {
+    font-size: var(--fs-12);
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--black);
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.toggle.lightTheme {
+    border-color: var(--gray-lightest);
+    background-color: var(--gray-lightest);
+}
+
+.toggle.lightTheme .toggleBtnActive {
+    background: var(--white);
+    color: var(--black);
+}
+
+.toggleBtn {
+    background: none;
+    border: none;
+    flex: 1;
+    font-size: var(--fs-12);
+    padding: 6px 0;
+}
+
+.toggleBtnActive {
+    background: var(--black);
+    color: var(--white);
+    border-radius: 2px;
+}
+
+.trees {
+    background-color: var(--yellow-green-light);
+    border-radius: 4px;
+    font-size: var(--fs-12);
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+.yearsSelector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.yearsLabel {
+    font-size: var(--fs-13);
+}
+
+.yearsControls {
+    display: flex;
+}
+
+.yearsValue {
+    font-size: var(--fs-14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+}
+
+.yearsButton {
+    margin: 0;
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    font-size: var(--fs-18);
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-green);
+    border: none;
+    border-radius: 2px;
+}
+
+.form {
+    margin-top: 15px;
+}
+
+.fieldGroup {
+    margin-bottom: 14px;
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.alignChildren {
+    display: flex;
+    column-gap: 6px;
+}
+
+.alignChildren .input, .alignChildren .toggle, .alignChildren .fieldGroup {
+    width: 50%;
+}
+
+.alignChildren .fieldGroup {
+    width: 50%;
+}
+
+.alignChildren .fieldGroup .input {
+    width: 100%;
+}
+
+
+.alignChildren .toggle {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    font-size: var(--fs-13);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+}
+
+.fieldGroupCheckbox {
+    display: flex;
+    align-items: center;
+}
+
+.fieldGroupCheckbox .label {
+    margin-bottom: 0;
+}
+
+.checkbox {
+    margin: 0 5px 0 0;
+    accent-color: var(--blue-muted);
+}
+
+.downloadBtn {
+    width: 100%;
+    padding: 10px;
+    background: rgb(33, 33, 33);
+    background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(138, 138, 138, 1) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
 }

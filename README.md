@@ -1,15 +1,30 @@
-# `create-preact`
+# Lyteflo Widget
 
-<h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
-</h2>
+## Overview
 
-<h3 align="center">Get started using Preact and Vite!</h3>
+This project is a **Preact-based widget** built with **Vite** for **Lyteflo**.
 
 ## Getting Started
 
--   `npm run dev` - Starts a dev server at http://localhost:5173/
+### Development
+To start a local development server:
+```sh
+npm run dev
+```
+This will start the widget at: **http://localhost:5173/**
 
--   `npm run build` - Builds for production, emitting to `dist/`
+### Building for Production
+To build the widget for production:
+```sh
+npm run build
+```
+This will generate optimized assets inside the `dist/` folder.
 
--   `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
+### Previewing Production Build
+To test the production build locally:
+```sh
+npm run preview
+```
+This serves the built project at: **http://localhost:4173/**
+
+Built with ❤️ by the Oleksandr!
