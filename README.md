@@ -1,4 +1,4 @@
-# Lyteflo Widget
+# Lyteflo Demo Widget
 
 ## Overview
 
@@ -27,4 +27,4 @@ npm run preview
 ```
 This serves the built project at: **http://localhost:4173/**
 
-Built with ❤️ by the Oleksandr!
+Built with ❤️ by Oleksandr!
